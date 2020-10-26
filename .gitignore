@@ -118,3 +118,34 @@ all.config
 
 # fetched Android config fragments
 kernel/configs/android-*.cfg
+
+# KangDroid Custom ignore
+8192cu
+arch/arm64/boot/dts/_ddot_/
+arch/arm64/boot/dts/tegra186-quill-p3310-1000-a00-overlay.dtbo
+arch/arm64/boot/dts/tegra186-quill-p3310-1000-c03-00-base-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra186-quill-p3310-1000-c03-00-base-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra186-quill-p3310-1000-c03-00-base-hdr40.dtbo
+arch/arm64/boot/dts/tegra194-p2888-0001-p2822-0000-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra194-p2888-0001-p2822-0000-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra194-p2888-0001-p2822-0000-hdr40.dtbo
+arch/arm64/boot/dts/tegra194-p3668-all-p3509-0000-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra194-p3668-all-p3509-0000-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra194-p3668-all-p3509-0000-hdr40.dtbo
+arch/arm64/boot/dts/tegra210-jetson-tx1-p2597-2180-a01-devkit-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra210-jetson-tx1-p2597-2180-a01-devkit-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra210-jetson-tx1-p2597-2180-a01-devkit-hdr40.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a01-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a01-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a01-hdr40.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a02-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a02-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0000-p3449-0000-a02-hdr40.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0003-p3542-0000-adafruit-sph0645lm4h.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0003-p3542-0000-fe-pi-audio-z-v2.dtbo
+arch/arm64/boot/dts/tegra210-p3448-0003-p3542-0000-hdr40.dtbo
+arch/arm64/boot/zImage
+constructing/
+drivers/video/tegra/host/
+firmware/tegra21x_xusb_firmware
+modules_testing/
