@@ -3039,9 +3039,9 @@ static u32 qed_grc_dump_big_ram(struct qed_hwfn *p_hwfn,
 		s_big_ram_defs[big_ram_id].num_of_blocks[dev_data->chip_id];
 	ram_size = total_blocks * BIG_RAM_BLOCK_SIZE_DWORDS;
 
-	strlcpy(type_name, s_big_ram_defs[big_ram_id].instance_name,
+	strncpy(type_name, s_big_ram_defs[big_ram_id].instance_name,
 		strlen(s_big_ram_defs[big_ram_id].instance_name));
-	strlcpy(mem_name, s_big_ram_defs[big_ram_id].instance_name,
+	strncpy(mem_name, s_big_ram_defs[big_ram_id].instance_name,
 		strlen(s_big_ram_defs[big_ram_id].instance_name));
 
 	/* Dump memory header */
@@ -5120,7 +5120,7 @@ static void qed_read_str_from_buf(void *buf, u32 *offset, u32 size, char *dest)
 {
 	const char *source_str = &((const char *)buf)[*offset];
 
-	strlcpy(dest, source_str, size);
+	strncpy(dest, source_str, size);
 	dest[size - 1] = '\0';
 	*offset += size;
 }

@@ -1286,7 +1286,7 @@ int extcon_dev_register(struct extcon_dev *edev)
 
 				goto err_alloc_cables;
 			}
-			strlcpy(str, buf, strlen(buf));
+			strncpy(str, buf, strlen(buf));
 
 			cable->edev = edev;
 			cable->cable_index = index;
@@ -1345,7 +1345,7 @@ int extcon_dev_register(struct extcon_dev *edev)
 				ret = -ENOMEM;
 				goto err_muex;
 			}
-			strlcpy(name, buf, strlen(buf));
+			strncpy(name, buf, strlen(buf));
 			sysfs_attr_init(&edev->d_attrs_muex[index].attr);
 			edev->d_attrs_muex[index].attr.name = name;
 			edev->d_attrs_muex[index].attr.mode = 0000;
