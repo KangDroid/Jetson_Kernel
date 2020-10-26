@@ -731,7 +731,7 @@ __SYSCALL(__NR_pkey_alloc,    sys_pkey_alloc)
 #define __NR_pkey_free 290
 __SYSCALL(__NR_pkey_free,     sys_pkey_free)
 #define __NR_kangdroid 291
-__SYSCALL(__NR_kangdroid, sys_hello)
+__SYSCALL(__NR_kangdroid, sys_get_nr_running)
 
 #undef __NR_syscalls
 #define __NR_syscalls 292
