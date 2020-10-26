@@ -2,10 +2,10 @@
 export PATH=/Volumes/NVidia/repo/bin_tmp:$PATH
 export CROSS_COMPILE='ccache aarch64-none-elf-'
 # Clean first.
-make ARCH=arm64 mrproper
-make ARCH=arm64 tegra_defconfig
-cp ../tegra21x_xusb_firmware ./firmware/
-bash scripts/config --file ./.config --set-str LOCALVERSION "-tegra" --set-str CONFIG_EXTRA_FIRMWARE "tegra21x_xusb_firmware" --set-str CONFIG_EXTRA_FIRMWARE_DIR "firmware"
+#make ARCH=arm64 mrproper
+#make ARCH=arm64 tegra_defconfig
+#cp ../tegra21x_xusb_firmware ./firmware/
+#bash scripts/config --file ./.config --set-str LOCALVERSION "-tegra" --set-str CONFIG_EXTRA_FIRMWARE "tegra21x_xusb_firmware" --set-str CONFIG_EXTRA_FIRMWARE_DIR "firmware"
 make ARCH=arm64 -j16
 
 # Build Modules
