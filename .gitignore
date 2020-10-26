@@ -149,3 +149,4 @@ constructing/
 drivers/video/tegra/host/
 firmware/tegra21x_xusb_firmware
 modules_testing/
+header_test/
