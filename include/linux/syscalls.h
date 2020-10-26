@@ -833,6 +833,7 @@ asmlinkage long sys_syncfs(int fd);
 
 asmlinkage long sys_fork(void);
 asmlinkage long sys_vfork(void);
+asmlinkage long sys_hello(void);
 #ifdef CONFIG_CLONE_BACKWARDS
 asmlinkage long sys_clone(unsigned long, unsigned long, int __user *, unsigned long,
 	       int __user *);

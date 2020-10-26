@@ -176,6 +176,10 @@ out:
 	return error;
 }
 
+SYSCALL_DEFINE0(hello) {
+	printk("Hello world\n");
+}
+
 SYSCALL_DEFINE3(setpriority, int, which, int, who, int, niceval)
 {
 	struct task_struct *g, *p;
