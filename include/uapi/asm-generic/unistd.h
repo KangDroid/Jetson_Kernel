@@ -732,9 +732,11 @@ __SYSCALL(__NR_pkey_alloc,    sys_pkey_alloc)
 __SYSCALL(__NR_pkey_free,     sys_pkey_free)
 #define __NR_kangdroid 291
 __SYSCALL(__NR_kangdroid, sys_get_nr_running)
+#define __NR_cpu_syscall_running 292
+__SYSCALL(__NR_cpu_syscall_running, sys_cpu_nr_running)
 
 #undef __NR_syscalls
-#define __NR_syscalls 292
+#define __NR_syscalls 293
 
 /*
  * All syscalls below here should go away really,
