@@ -834,6 +834,7 @@ asmlinkage long sys_syncfs(int fd);
 asmlinkage long sys_fork(void);
 asmlinkage long sys_vfork(void);
 asmlinkage long sys_get_nr_running(unsigned int __user *);
+asmlinkage long sys_cpu_nr_running(unsigned int __user *, int cpu);
 #ifdef CONFIG_CLONE_BACKWARDS
 asmlinkage long sys_clone(unsigned long, unsigned long, int __user *, unsigned long,
 	       int __user *);

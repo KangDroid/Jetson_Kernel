@@ -191,6 +191,21 @@ SYSCALL_DEFINE1(get_nr_running, unsigned int __user*, ret_val) {
 	}
 }
 
+SYSCALL_DEFINE2(cpu_nr_running, unsigned int __user*, ret_val, int, cpu) {
+	// Get zero CPU, JETSON has only ONE CPU
+	if (cpu > 3 || cpu < 0) {
+		printk("WARNING: Jetson ONLY has 4 Logical CPUS. Process hooked CPU No. %d\n", cpu);
+		return -EFAULT;
+	}
+	struct rq *rq = cpu_rq(cpu);
+	unsigned int tmp = rq->nr_running;
+	if (copy_to_user(ret_val, &tmp, sizeof(unsigned int))) {
+		return -EFAULT;
+	} else {
+		return 0;
+	}
+}
+
 SYSCALL_DEFINE3(setpriority, int, which, int, who, int, niceval)
 {
 	struct task_struct *g, *p;
